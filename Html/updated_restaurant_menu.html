@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\8761704.gif" type="image/gif">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .menu-table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #ff9800;
+            color: white;
+        }
+        td {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Breakfast Menu</h2>
+    <table class="menu-table" id="breakfastMenuTable">
+        <tr><th>Item No.</th><th>Dish</th><th>Price</th></tr>
+    </table>
+
+    <h2>Main Course Menu</h2>
+    <table class="menu-table" id="mainCourseMenuTable">
+        <tr><th>Item No.</th><th>Dish</th><th>Price</th></tr>
+    </table>
+
+    <h2>Dessert Menu</h2>
+    <table class="menu-table" id="dessertMenuTable">
+        <tr><th>Item No.</th><th>Dish</th><th>Price</th></tr>
+    </table>
+
+    <script>
+        const breakfastMenu = ['Pancakes - $12', 'Eggs Benedict - $22.99', 'Oatmeal - $21.99', 'Frittata - $15'];
+        const mainCourseMenu = ['Steak - $30', 'Pasta - $18.50', 'Burger - $12.99', 'Salmon - $25'];
+        const dessertMenu = ['Cake - $10', 'Ice Cream - $7.50', 'Pudding - $9', 'Fruit Salad - $6.99'];
+
+        function populateTable(menuArray, tableId) {
+            const table = document.getElementById(tableId);
+            menuArray.forEach((item, index) => {
+                let [dish, price] = item.split(" - ");
+                let row = `<tr><td>${index + 1}</td><td>${dish}</td><td>${price}</td></tr>`;
+                table.innerHTML += row;
+            });
+        }
+
+        populateTable(breakfastMenu, 'breakfastMenuTable');
+        populateTable(mainCourseMenu, 'mainCourseMenuTable');
+        populateTable(dessertMenu, 'dessertMenuTable');
+    </script>
+
+</body>
+</html>

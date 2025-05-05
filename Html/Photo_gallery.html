@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <link rel="shortcut icon" href="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\gallery.png" type="image/png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="C:\Users\sande\OneDrive\Desktop\Sandeep\Css\photo.css">
+    </head>
+    <body>
+        <header>
+            <h1>photo Gallery</h1>
+        <div class="filter-container">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="nature" class="filter-btn">Nature</button>
+            <button data-filter="tech" class="filter-btn">Tech</button>
+            <button data-filter="architecture" class="filter-btn">Architecture</button>
+            <button data-filter="cars" class="filter-btn">Cars</button>
+        </div>
+        </header>
+        <main class="gallery-container">
+            <div id="nature">
+                <div class="gallery-item nature">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\coconuts.jpg" alt="coconuts-plants" width="550" height="500">
+                </div>
+                <div class="gallery-item nature">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\bird.jpg" alt="bird" width="550" height="500">
+                </div>
+                <div class="gallery-item nature">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\elephant.jpg" alt="elephant" width="550" height="500">
+                </div>
+                <div class="gallery-item nature">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\tall single rock.jpg" alt="Rock" width="550" height="500">
+                </div>
+                <div class="gallery-item natute">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\man on hill.jpg" alt="man on hill" width="550" height="500">
+                </div>
+            </div>
+            <div id="tech">
+                <div class="gallery-item tech">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Robotics.jpg" alt="Robotics" width="550" height="500"> 
+                </div>
+                <div class="gallery-item tech">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Vision.jpg" alt="Vision" width="550" height="500">
+                </div>
+                <div class="gallery-item tech">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Nano-chips.jpg" alt="Nano-chips" width="550" height="500">
+                </div>
+                <div class="gallery-item tech">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Networking.jpg" alt="Networks" width="550" height="500">
+                </div>
+                <div class="gallery-item tech">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Devices.jpg" alt="Devices" width="550" height="500">
+                </div>
+            </div>
+            <div id="architecture">
+                <div class="gallery-item architecture">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Appartments.jpg" alt="Apartments" width="550" height="500">
+                </div> 
+                <div class="gallery-item architecture">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\architecture.jpg" alt="Architecture" width="550" height="500">
+                </div>
+                <div class="gallery-item architecture">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Drone-snpa.jpg" alt="Drone-snap" width="550" height="500">
+                </div> 
+                <div class="gallery-item architecture">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Island-house.jpg" alt="Island-house" width="550" height="500">
+                </div>
+                <div class="gallery-item architecture">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Ring-Roads.jpg" alt="Ring-Roads" width="550" height="500">
+                </div>
+            </div>
+            <div id="cars">
+                <div class="gallery-item cars">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Benz.jpg" alt="Benz" width="550" height="500">
+                </div>
+                <div class="gallery-item cars">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\car.jpg" alt="Car" width="550" height="500">
+                </div>
+                <div class="gallery-item cars">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Ferrari.jpg" alt="Ferrari" width="550" height="500">
+                </div>
+                <div class="gallery-item cars">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\lambo.jpg" alt="Lambo" width="550" height="500">
+                </div>
+                <div class="gallery-item cars">
+                    <img src="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\Rolls-Roys.jpg" alt="Rolls-Roys" width="550" height="500">
+                </div>
+            </div>
+        </main>
+        <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="full-image" alt="Full View">
+          </div>
+          <script src="C:\Users\sande\OneDrive\Desktop\Sandeep\Javascript\photo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="C:\Users\sande\OneDrive\Desktop\Sandeep\Css\reg.css">
+        <link rel="shortcut icon" href="C:\Users\sande\OneDrive\Desktop\Sandeep\Images\reg.png" type="image/png">
+    </head>
+    <body>
+        <div class="form-container">
+            <form>
+                <h2>Registration</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div><br/>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div><br/>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div><br/>
+                <div class="form-group">
+                    <label for="phone number">Phone no:</label>
+                    <input type="tel" id="phone number" name="phone number" placeholder="Enter your phone number" required>
+                </div><br/>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="Usa">United States</option>
+                        <option value="india">India</option>
+                        <option value="Uk">United Kingdom</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div><br/>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
