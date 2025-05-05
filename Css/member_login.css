@@ -1,0 +1,86 @@
+/* Style for the body */
+body {
+    background-color: #fbdada;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style for the login box */
+.login-box {
+    background-color: #ffb3b3;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* Style for the logo */
+.logo {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* Style for the heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for the input boxes */
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+/* Style for the button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a3aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #332fcc;
+}
