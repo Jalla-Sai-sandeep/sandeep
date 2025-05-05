@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Turnery Operator</title>
+    </head>
+    <body>
+        <script>
+            let a = prompt("what is your age?");
+            a=Number.parseInt(a);
+            if (a<0){
+                alert("this is invalid age");
+            }
+            else if (a<10){
+                alert("you are a kid and you should not drink");
+            }
+            else if (a<18 && a>=10){
+                alert("you can not drink");
+            }
+            else {
+                alert("you can  drink as you are above 18");
+            }
+            alert("you ", ( a < 18? "can not drink": "can drink "))
+        </script>
+    </body>
+</html>

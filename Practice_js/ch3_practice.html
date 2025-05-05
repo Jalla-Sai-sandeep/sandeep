@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chapter 3 Practice set</title>
+    </head>
+    <body>
+        <p id="output"></p>
+        <script>
+            /*let obj = {
+                harry :98,
+                rohan :70,
+                aakash :78,
+            }
+            let text = "";
+            for (let i in obj){
+
+                text +=i + " : " + obj[i] + "<br>";
+            }
+                document.getElementById('abc').innerHTML = text;
+                */
+        let cn = 45;
+        let a;
+        let message = ""; // Store messages
+
+        while (a != cn) {
+            message += "Try again!<br>"; // Append message with line break
+            document.getElementById("output").innerHTML = message; // Update content
+            a = prompt("Enter a number");
+        }
+
+        message += "You have entered the correct number!"; // Success message
+        document.getElementById("output").innerHTML = message; // Final update
+        </script>
+    </body>
+</html>
+
+
+
+

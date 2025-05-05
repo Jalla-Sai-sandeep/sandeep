@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks</title>
+</head>
+<body>
+
+    <h2>Student Marks</h2>
+    <ul id="marksList"></ul> <!-- Marks will be displayed here -->
+
+    <script>
+        let marks = {
+            Cn: 43,
+            Sc: 49,
+            Ue: 41,
+            Pad: 30,
+            Acd: 40
+        };
+
+        let marksList = document.getElementById("marksList");
+
+        for (let subject in marks) {
+            let listItem = document.createElement("li");
+            listItem.textContent = `Marks in ${subject}: ${marks[subject]}`;
+            marksList.appendChild(listItem);
+        }
+    </script>
+
+</body>
+</html>
